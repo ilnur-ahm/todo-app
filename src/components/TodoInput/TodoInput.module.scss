@@ -1,0 +1,50 @@
+.input {
+  display: flex;
+}
+
+.todoInput {
+  // position: relative;
+  margin: 0;
+  width: 100%;
+  font-size: 24px;
+  color: #000000b0;
+  font-family: inherit;
+  line-height: 1.4em;
+  border: 0;
+  padding: 6px;
+  border: 1px solid #999;
+  box-shadow: inset 0 -1px 5px 0 rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 15px;
+  border: none;
+  background: rgba(0, 0, 0, 0.003);
+  box-shadow: inset 0 -2px 1px rgba(0, 0, 0, 0.03);
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: #e3e0e0;
+    font-style: italic;
+  }
+}
+
+.arrow {
+  width: 25px;
+  height: auto;
+  margin-left: 10px;
+  appearance: none;
+  cursor: pointer;
+  background-image: url("../../icons/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+@media (max-width: 600px) {
+  .todoInput {
+    font-size: 20px;
+  }
+}
